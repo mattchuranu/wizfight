@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="WizFight" package="com.adag.wizfight" version="0.0.1" company="Another Day, Another Game" />
+
+	<app file="WizFight" main="Main" path="bin" />
+
+	<window fps="60" resizable="true" background="0x000000" />
+	<window width="1080" height="720" />
+
+	<setenv name="no_console" value="1" ></setenv>
+
+	<source path="src" />
+
+	<haxelib name="openfl" />
+	<!-- <haxelib name="openfl-ouya" /> -->
+	<!-- <haxelib name="HaxePunk" /> -->
+
+	<assets path="assets/graphics" rename="gfx" include="*.png" />
+	<assets path="assets/maps" rename="maps" include="*.tmx|*.lvl" type="bytes" />
+	<assets path="assets/font" rename="font" include="*.ttf|*.otf" />
+	<assets path="assets/config" rename="conf" include="*.xml" type="bytes" />
+	<assets path="assets/music" rename="music" include="*.ogg" />
+	<assets path="assets/sound" rename="snd" include="*.wav" />
+	<assets path="assets/enemies" rename="enemies" include="*.xml" type="bytes" />
+
+	<icon path="icon.svg" size="256" />
+	<!-- <icon path="icon.png" size="256" /> -->
+</project>

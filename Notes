@@ -1,0 +1,141 @@
+1080 x 720 resolution.
+360 x 240 playfield.
+
+To do:
+
+- Add more levels with more, varied tilesets. Try to make more tiles for each tileset.
+- How many tracks of music do I want? 1 per level in the basic level set? A set of 10-12?
+- Clean up title screen.
+  - Make a nicer logo.
+- Clean up graphics for hills, spikes, lasers, and trap switches.
+  - Also fire and ocean wizards' powers.
+- Find a way to make lasers more performance efficient.
+  - Make it so that it calculates the distance to the nearest wall, places an entity and calculates the width of the entity (that creates particles for the laser beam to show up) based on there it's placed?
+- Make a spider level.
+  - Spiderweb trap that slows you down.
+  - Spider trap that drops down, grabs the player and takes him off screen.
+- Add a mode based on a certain amount of lives.
+- Work on improving the graphics of the HUD.
+- Work on options menu.
+  - Improve the layout.
+  - Finish deciding on list of Game Settings.
+- Work on text size on Ouya.
+- Make a jump setting that's about half the speed of the current normal setting.
+
+- Work on improving powers for:
+  - Naked wizard - change NakedRadius hitbox to a circle.
+
+- Work on improving all graphics for the powers.
+
+- Ideas given for wizards.
+  - Groovy wizard: No power idea yet.
+  - Thief wizard: Steal power from a wizard he kills.
+  - Pizza wizard: Drops a pizza on players.
+  - Mimic wizard: Mimics others' powers.
+  - Laser wizard: Spawns a laser that spans the entire height of the screen and slowly makes its way across.
+  - Bean/Sprout wizard: Spawns a beanstalk only he can move/shoot past.
+  - Mirror wizard: Spawns a doppelganger that does exactly the opposite he does.
+  - Gravity wizard: Makes people's shots affected by gravity.
+  - Dream wizard: No power idea yet.
+
+- Ideas we can't keep in public builds but want to add to private builds.
+  - Black knight wizard: Have his limbs fall off, flying in the direction they're facing. Only works 4 times until death, shooting one limb off at a time.
+    - Have limbs affected by gravity like players and boulders and have them disappear after being on the ground for so long.
+
+- Ideas for wizards that have already had powers implemented.
+  - Invisiwizard: The power to become truly invisible for a while. The pro is that the enemy can't see you, the con is that so can't you. Maybe a puff of sprites when it's activated, so that everyone knows where you made yourself invisible. Then you have to move, and moving means running into traps...
+  - Sun wizard: A big fat fireball that hovers and pulls everyone towards it.
+    - If I do this one, "stun" the sun wizard for the duration that the sun exists?
+    - When it exists, disable the use of keys for movement and set velocity based on the angle to the sun.
+  - Mushroom wizard: A mushroom that if jumped on by the mushroom wizard will bounc him high in the air, but will poison everyone else (left/right directions inverted as a way of simulating nausea, perhaps?).
+  - Fire wizard: FIRE, MOTHERF**KER!
+  - Chaos wizard: One of the other wizards' attacks, picked at random...
+  - Earth wizard - temporarily turns into a boulder similar to the one on the temple level except smaller and the player can control the direction.
+  - Rainbow wizard: Can create a rainbow that only he can walk on. Everyone else is damaged.
+  - Earth wizard: The power to create terrain - limited in some way. 
+  - Naked wizard: Lifting his beard. Stuns everyone else for half a second.
+
+To be considered:
+
+- Change of name?
+- Move to a pixel perfect collision system for collisions with shots?
+- Moving platforms?
+  - Make them type "solid" and then add a mask from each one that follows them of type "platform"? Have mask store graphic's velocity.
+  - If colliding with platform, check for maxVel + platformVel. If higher, velocity = maxVel + platformVel.
+- Some sort of Konami code secret.
+- Make a level editor that combines .lvl file and Tiled file. Custom loading of said file.
+  - Fields to enter a name for a level to load and to create. Have it convert to all lowercase.
+  - Drag n drop objects.
+  - Save level.
+- An API for custom traps.
+- Platforms you can jump up through/drop down from.
+- Sizing up sprites.
+
+Web logins:
+- Music directory: musicmasterpass/Wizard5!
+- Testing directory: W1ZF1GH7ER/F1gh70n
+
+Remember how to access an entity's public methods.
+
+col = collision("player", x, y);
+
+if (col != null) {
+   col = cast(col, Player);
+   var = col.var
+}
+
+Old enemy chaser code:
+
+/*for (i in 0...Types.types.length) {
+        if (chasing == "" && scene.typeCount(Types.types[i]) > 0) {
+          chasing = Types.types[i];
+          pathStart = new Point(x, y);
+          var plyr = scene.nearestToPoint(chasing, x, y);
+          path = gridPath.search(Std.int(pathStart.x), Std.int(pathStart.y), Std.int(plyr.x), Std.int(plyr.y));
+        } else {
+          if (scene.typeCount(Types.types[i]) > 0 && Types.types[i] != chasing) {
+            var plyr = scene.nearestToPoint(Types.types[i], x, y);
+            var ch = scene.nearestToPoint(chasing, x, y);
+
+            if (distanceToPoint(plyr.x, plyr.y, true) < distanceToPoint(ch.x, ch.y, true)) {
+              chasing = Types.types[i];
+              pathStart = new Point(x, y);
+              path = gridPath.search(Std.int(pathStart.x), Std.int(pathStart.y), Std.int(plyr.x), Std.int(plyr.y));
+            }
+          }
+        }
+      }
+
+      if (pathStart.x != -1000 && path != null && path.length > 0) {
+        if (currentNode == null) {
+          currentNode = path.shift();
+        }
+        else { 
+          if (x == currentNode.x && y == currentNode.y) {
+            currentNode = path.shift();
+          } else {
+            var ang = Math.atan2(currentNode.y - y, currentNode.x - x); 
+            x = x - maxVel.x*Math.cos(ang)*1;
+            y = y + maxVel.x*Math.sin(ang)*1;
+          }
+        }
+      }*/
+
+      /*if (altType == "chaser") {
+      grid = new Grid(20 * 16, 15 * 16, 16, 16);
+      for (i in 0...20) {
+        for (j in 0...15) {
+          grid.setTile(i, j, collide("solid", i * 16, j * 16) != null);
+        }
+      }
+
+      gridPath = new GridPath(grid);
+      path = new Array();
+      pathStart = new Point(-1000, -1000);
+      currentNode = null;
+      chasing = "earth";
+      var plyr = scene.nearestToPoint(chasing, x, y);
+      pathStart = new Point(x, y);
+      path = gridPath.search(Std.int(pathStart.x), Std.int(pathStart.y), Std.int(plyr.x), Std.int(plyr.y));
+      currentNode = path.shift();
+    }*/
