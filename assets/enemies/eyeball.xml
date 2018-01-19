@@ -1,0 +1,10 @@
+<enemy>
+	<w>8</w>
+	<h>8</h>
+	<type>chaser</type>
+	<sprite>eyeball</sprite>
+	<health>3</health>
+	<speed>1</speed>
+	<knockback>1</knockback>
+	<weight>3</weight>
+</enemy>

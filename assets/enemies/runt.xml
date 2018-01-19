@@ -1,0 +1,10 @@
+<enemy>
+	<w>8</w>
+	<h>8</h>
+	<type>runner</type>
+	<sprite>runt</sprite>
+	<health>1</health>
+	<speed>3</speed>
+	<knockback>1</knockback>
+	<weight>4</weight>
+</enemy>

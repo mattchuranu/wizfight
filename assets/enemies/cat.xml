@@ -1,0 +1,10 @@
+<enemy>
+	<w>8</w>
+	<h>8</h>
+	<type>fraidycat</type>
+	<sprite>cat</sprite>
+	<health>2</health>
+	<speed>2</speed>
+	<knockback>1</knockback>
+	<weight>3</weight>
+</enemy>

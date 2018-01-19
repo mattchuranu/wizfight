@@ -1,0 +1,10 @@
+<enemy>
+	<w>8</w>
+	<h>8</h>
+	<type>turret</type>
+	<sprite>turret</sprite>
+	<health>2</health>
+	<speed>0</speed>
+	<knockback>0</knockback>
+	<weight>2</weight>
+</enemy>

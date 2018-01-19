@@ -1,0 +1,14 @@
+<controls>
+	<!-- This setup file uses the key codes associated with each key.
+	Go to https://github.com/HaxePunk/HaxePunk/blob/master/com/haxepunk/utils/Key.hx
+	for a list of all key codes. -->
+	<players>
+		<pone up="87" down="83" left="65" right="68" hitone="71" hittwo="72" />
+		<ptwo up="73" down="75" left="74" right="76" hitone="219" hittwo="221" />
+		<pthree up="38" down="40" left="37" right="39" hitone="96" hittwo="110" />
+		<pfour up="36" down="35" left="46" right="34" hitone="45" hittwo="33" />
+	</players>
+
+	<jump option="0" />
+	<orb loss="1" rate="0" />
+</controls>
