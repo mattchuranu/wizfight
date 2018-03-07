@@ -1,2 +1,9 @@
 #Binaries
 bin
+
+#Assets
+*.png
+*.ogg
+*.wav
+*.lvl
+*.tmx
