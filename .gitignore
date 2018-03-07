@@ -1,5 +1,6 @@
 #Binaries
 bin
+dump
 
 #Assets
 *.png
@@ -7,3 +8,6 @@ bin
 *.wav
 *.lvl
 *.tmx
+*.ttf
+*.otf
+*.hash
