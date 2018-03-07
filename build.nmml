@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-	<meta title="WizFight" package="com.adag.wizfight" version="0.0.1" company="Another Day, Another Game" />
+	<meta title="WizFight" package="com.twocredits.wizfight" version="0.0.1" company="Two Credits" />
 
 	<app file="WizFight" main="Main" path="bin" />
 

@@ -12,7 +12,7 @@ import haxe.xml.Fast;
 import game.Types;
 import flash.display.StageDisplayState;
 import flash.geom.Rectangle;
-#if mac
+#if (mac || linux)
 import game.XBOX_GAMEPAD_MAC;
 #end
 #if windows
@@ -157,7 +157,7 @@ class Logo extends Entity
 			}
 
 			for (i in 0...4) {
-#if mac
+#if (mac || linux)
 				if (Input.joystick(i).pressed(XBOX_GAMEPAD_MAC.START_BUTTON)) {
 #end
 #if windows
@@ -168,7 +168,7 @@ class Logo extends Entity
 					}			
 				}
 
-#if mac
+#if (mac || linux)
 				var xaxis = Input.joystick(i).getAxis(XBOX_GAMEPAD_MAC.LEFT_ANALOGUE_X);
 #end
 #if windows
@@ -201,7 +201,7 @@ class Logo extends Entity
 					}
 				}*/
 
-#if mac
+#if (mac || linux)
 				if (Input.joystick(i).pressed(XBOX_GAMEPAD_MAC.A_BUTTON) || Input.pressed(Std.parseInt(controls[i].att.hitone))) {
 #end
 #if windows

@@ -1,0 +1,20 @@
+<level>
+	<spawns>
+		<spawn x="0" y="112" />
+		<spawn x="304" y="112" />
+		<spawn x="112" y="160" />
+		<spawn x="192" y="160" />
+	</spawns>
+
+	<bounds>
+		<platform x="-16" y="128" />
+		<platform x="320" y="128" />
+		<platform x="-16" y="208" />
+		<platform x="320" y="208" />
+	</bounds>
+
+	<hills>
+		<hill x="16" y="22" />
+		<hill x="288" y="22" />
+	</hills>
+</level>

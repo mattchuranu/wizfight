@@ -1,0 +1,29 @@
+<level>
+	<spawns>
+		<spawn x="224" y="208" />
+		<spawn x="32" y="192" />
+		<spawn x="144" y="128" />
+		<spawn x="160" y="48" />
+	</spawns>
+
+	<bounds>
+		<platform x="-16" y="208" />
+		<platform x="320" y="208" />
+	</bounds>
+
+	<hills>
+		<hill x="160" y="6" />
+		<hill x="224" y="118" />
+	</hills>
+
+	<traps>
+		<!-- directions (which way the trap faces): 0 - down, 1 - up, 2 - right, 3 - left -->
+		<!-- <laser x="32" y="204" spawnx="272" spawny="208" delay="120" dir="3" /> -->
+		<laser x="272" y="124" spawnx="208" spawny="96" delay="300" dir="0" />
+		<laser x="272" y="124" spawnx="128" spawny="80" delay="300" dir="0" />
+		<laser x="272" y="124" spawnx="80" spawny="64" delay="300" dir="0" />
+		<laser x="48" y="156" spawnx="208" spawny="96" delay="300" dir="0" />
+		<laser x="48" y="156" spawnx="128" spawny="80" delay="300" dir="0" />
+		<laser x="48" y="156" spawnx="80" spawny="64" delay="300" dir="0" />
+	</traps>
+</level>

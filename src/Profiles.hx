@@ -14,7 +14,7 @@ import haxe.xml.Fast;
 import com.haxepunk.utils.Joystick;
 import game.Types;
 import game.Border;
-#if mac
+#if (mac || linux)
 import game.XBOX_GAMEPAD_MAC;
 #end
 #if windows
@@ -231,7 +231,7 @@ class Profiles extends Scene
 
 		for (i in 0...4) {
 			if (focus == 0) {
-#if mac
+#if (mac || linux)
 				var xaxis = Input.joystick(i).getAxis(XBOX_GAMEPAD_MAC.LEFT_ANALOGUE_X);
 				var yaxis = Input.joystick(i).getAxis(XBOX_GAMEPAD_MAC.LEFT_ANALOGUE_Y);
 #end
@@ -282,7 +282,7 @@ class Profiles extends Scene
 				}
 			}*/
 
-#if mac
+#if (mac || linux)
 			if (Input.joystick(i).pressed(XBOX_GAMEPAD_MAC.A_BUTTON) || Input.pressed(Key.Z)) {
 #end
 #if windows
@@ -293,7 +293,7 @@ class Profiles extends Scene
 				}
 			}
 
-#if mac
+#if (mac || linux)
 			if (Input.joystick(i).pressed(XBOX_GAMEPAD_MAC.X_BUTTON) || Input.pressed(Key.X)) {
 #end
 #if windows

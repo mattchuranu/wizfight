@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="15" tilewidth="16" tileheight="16" backgroundcolor="#000000">
+ <tileset firstgid="1" name="subterranean" tilewidth="16" tileheight="16">
+  <image source="../../../wizfight/assets/graphics/tiles/subterranean.png" width="80" height="160"/>
+ </tileset>
+ <layer name="back" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJydUgEOgjAM7DsWkUFEMzSI//+cbVzjPNpCvOQCoVx37Y3og55sFObEnJkPqCXmy9FdmLegdvT7wnwyR0ejHi0fQ6CTs3CeCH3td2d2UEvOOe08Z6Pf2Lyv9J1BdDNtMyn1+6lSfSz0mw/usTRP9O7ljnrUKXCH0s/LvQV6TMF/svN2Pwi5nxm8iM7K6ag3a67oDnpIRi89w/OSyd+3Bcl/Cur5j56CYUdjZb2nuTp1vfOSteZszfUG0GsNyg==
+  </data>
+ </layer>
+ <layer name="front" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJytUgEKwkAM6zwnylROxen/X2rDWqilZye3QMDReknTEi2ozBNti8l9j0l/VofHt/x+MveNvoFZmC/TvwbR/NC5Mx8r/u/9w2/LYwbowv9M3zNMHW9GgMebaP3KS2f7J88WBtEqne8gI+Sju6lJv99Pdm+ZNmbYCW12Pe9iv9eGVhFGO0Cm0V0caLnryJPWLFTjHNRG8XeRHn+bVbyrFjwdHa1HW/czK6CnGUP3A8EwBDo=
+  </data>
+ </layer>
+ <layer name="collision" width="20" height="15" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYIAALiimJqCFeVxY2LjUkeonbGrJMQddLzkAlx+oHU/o9hAymxp2UxKm+Myhdnoj1m5q+QfZXEJ2EaMPnzixduHSQ0zaJBRGxIQduhoAm3MDIQ==
+  </data>
+ </layer>
+</map>

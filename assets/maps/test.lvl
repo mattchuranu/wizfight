@@ -1,0 +1,29 @@
+<level>
+	<spawns>
+		<spawn x="0" y="0" />
+		<spawn x="304" y="0" />
+		<spawn x="0" y="208" />
+		<spawn x="304" y="208" />
+	</spawns>
+
+	<lavas>
+		<lava x="96" y="112" />
+		<lava x="112" y="112" />
+		<lava x="128" y="112" />
+		<lava x="144" y="112" />
+		<lava x="160" y="112" />
+		<lava x="176" y="112" />
+		<lava x="192" y="112" />
+		<lava x="208" y="112" />
+	</lavas>
+
+	<bounds>
+		<platform x="-16" y="16" />
+		<platform x="320" y="16" />
+		<platform x="-16" y="224" />
+		<platform x="320" y="224" />
+	</bounds>
+
+	<hills>
+	</hills>
+</level>

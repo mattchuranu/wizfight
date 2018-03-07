@@ -480,10 +480,7 @@ class Player extends Entity
 					}
 
 					if (Input.pressed(hitone) && deathTimer <= 0 && powerTimer <= 0 && (cast(scene, Level).zenTimer <= 0 || type == "zen" || altType == "zen")) {
-						var shots = 0;
-						if (scene.typeCount(type + "_shot") != null) {
-							shots += scene.typeCount(type + "_shot");
-						}
+						var shots = scene.typeCount(type + "_shot");
 
 						if (shots < 3) {
 							shotSnd.play(0.3);
@@ -515,10 +512,7 @@ class Player extends Entity
 					}
 
 					if (gamepad.pressed(hitone) && deathTimer <= 0 && powerTimer <= 0 && (cast(scene, Level).zenTimer <= 0 || type == "zen" || altType == "zen")) {
-						var shots = 0;
-						if (scene.typeCount(type + "_shot") != null) {
-							shots += scene.typeCount(type + "_shot");
-						}
+						var shots = scene.typeCount(type + "_shot");
 
 						if (shots < 3) {
 							shotSnd.play(0.3);
@@ -996,7 +990,7 @@ class Player extends Entity
 				coffeeTimer = 600;
 				activated = true;
 			case "dark" :
-				if (scene.typeCount("dark_pow") == null || scene.typeCount("dark_pow") <= 0) { scene.add(new Blackhole(x + 6, y + 8)); activated = true; }
+				if (scene.typeCount("dark_pow") <= 0) { scene.add(new Blackhole(x + 6, y + 8)); activated = true; }
 			case "earth" :
 				scene.add(new EarthBoulder(x + 6, y + 4, facing, type));
 				activated = true;
@@ -1045,7 +1039,7 @@ class Player extends Entity
 			case "moon" :
 				if (onGround) { scene.add(new MoonTurret(Std.int(x / 16) * 16, (Std.int(y / 16) * 16), facing, type)); activated = true; }
 			case "mushroom" :
-				if (onGround) { var shrooms = 0; if (scene.typeCount("poisonmushroom") != null) { shrooms += scene.typeCount("poisonmushroom"); } if (shrooms < 3) { scene.add(new PoisonMushroom(Std.int(x / 16) * 16, (Std.int(y / 16) * 16) - 12, type)); activated = true; } }
+				if (onGround) { var shrooms = scene.typeCount("poisonmushroom"); if (shrooms < 3) { scene.add(new PoisonMushroom(Std.int(x / 16) * 16, (Std.int(y / 16) * 16) - 12, type)); activated = true; } }
 			case "naked" :
 				stunTimer = 300;
 				naked = true;

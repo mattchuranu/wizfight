@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="15" tilewidth="16" tileheight="16" backgroundcolor="#000000">
+ <tileset firstgid="1" name="subterranean2" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/subterranean2.png" width="80" height="160"/>
+ </tileset>
+ <layer name="back" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJy9kw0KgCAMhaVjlCFFIP2gdf/LtZHBEF+IWQ8+hE3fNlSr6skQY0W/iRiIHuQdsRM+rMwB9rbBi1ke9uWI667Bq/a8FtRDs3HOg5wBfqXi/nLmdaCflF8jKJX0+Os+OsEtGUvNj/xYs7reVCyObeDMF/8t5o0MqKEFspZO5OLeTrhBCvc=
+  </data>
+ </layer>
+ <layer name="front" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJytUe0KgCAMtKb0tw+s3v9JU9hgDOvUPDgmuu3OzbnxCIPfY+L9kf/nHXlpzctaZ4WfC+SM8oMgfnv8tHgIL2fPcUokh2cnkBmS6bErHhVeLFau3TgiZM2Z6UFvhKi0Rb92Jz26pZ2Qof1TMFFDdqi5FOhNjZ6fvi/VPu3pA6M=
+  </data>
+ </layer>
+ <layer name="collision" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBj8gAuKaSVPTcDFQLx76OUmfICLYWDdg24/se7ApY9S/1DqDkJqSTFrIOKEEvuJjRMuHHqUiTALAHM4AvQ=
+  </data>
+ </layer>
+</map>

@@ -42,7 +42,7 @@ import game.part.DustEmitter;
 import game.part.ZenEmitter;
 import game.part.Emitters;
 import game.powers.Orb;
-#if mac
+#if (mac || linux)
 import game.XBOX_GAMEPAD_MAC;
 #end
 #if windows
@@ -366,7 +366,7 @@ class Level extends Scene
 								Std.parseInt(playercontrols[i].att.up), Std.parseInt(playercontrols[i].att.down), Std.parseInt(playercontrols[i].att.left), Std.parseInt(playercontrols[i].att.right), 
 								Std.parseInt(playercontrols[i].att.hitone), Std.parseInt(playercontrols[i].att.hittwo), _speed);
 						} else {
-#if mac
+#if (mac || linux)
 							players[i] = new Player(spawnArray[n].x, spawnArray[n].y, Types.types[choice[i]], 
 								XBOX_GAMEPAD_MAC.A_BUTTON, XBOX_GAMEPAD_MAC.LEFT_ANALOGUE_Y, XBOX_GAMEPAD_MAC.LEFT_ANALOGUE_X, XBOX_GAMEPAD_MAC.LEFT_ANALOGUE_X, XBOX_GAMEPAD_MAC.X_BUTTON, XBOX_GAMEPAD_MAC.Y_BUTTON, 
 								_speed, Input.joystick(_control[i]));
@@ -777,7 +777,7 @@ class Level extends Scene
 #if !flash
 			for (i in 0...4) {
 #end
-#if mac
+#if (mac || linux)
 				if (Input.joystick(i).pressed(XBOX_GAMEPAD_MAC.START_BUTTON)) {
 #end
 #if windows

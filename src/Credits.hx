@@ -14,7 +14,7 @@ import haxe.xml.Fast;
 import com.haxepunk.utils.Joystick;
 import game.Types;
 import game.Border;
-#if mac
+#if (mac || linux)
 import game.XBOX_GAMEPAD_MAC;
 #end
 #if windows
@@ -90,7 +90,7 @@ class Credits extends Scene
 			HXP.scene = new TitleScreen();
 		}
 		for (i in 0...4) {
-#if mac
+#if (mac || linux)
 			if (Input.joystick(i).pressed(XBOX_GAMEPAD_MAC.X_BUTTON) || Input.joystick(i).pressed(XBOX_GAMEPAD_MAC.B_BUTTON)) {
 #end
 #if windows

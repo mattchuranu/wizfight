@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="15" tilewidth="16" tileheight="16" backgroundcolor="#000000">
+ <tileset firstgid="1" name="spider_cave" tilewidth="16" tileheight="16">
+  <image source="../graphics/tiles/spider_cave.png" width="240" height="160"/>
+ </tileset>
+ <layer name="back" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF4kAszIAb1OKRwwcqgTgHC6a2eXlUNC+aAvM6gLiLAeI/mHnxZJqFDJDdSQ3zOqDmUMs8EIC5kdy4HUjgwwCJd2qBLCCOAeIAPPbhksOmNgaKcYVtJQH7kEE0knk1QOyPxT5S8inMryAcD3ULun1xUEwuAAAwVxzI
+  </data>
+ </layer>
+ <layer name="front" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyzZ2BgcGRABfJAbA/EClCaFIwO3IHYA4i1sdgzHIAlEItSySxQWBkAsRcQe1PJzKEKpBgg6cYLSnsisWkdNqB40GKApFlqATUgdkCzYyjHMSh+dBgIp31Q/tBFE7OAiiNjfShGF0fHAH6DDfk=
+  </data>
+ </layer>
+</map>

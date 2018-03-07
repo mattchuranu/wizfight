@@ -9,7 +9,7 @@ import haxe.xml.Fast;
 import game.Types;
 import menu.MenuText;
 import flash.geom.Point;
-#if mac
+#if (mac || linux)
 import game.XBOX_GAMEPAD_MAC;
 #end
 #if windows
@@ -365,7 +365,7 @@ class Options extends Scene
 		}
 
 		for (i in 0...4) {
-#if mac
+#if (mac || linux)
 			var xaxis = Input.joystick(i).getAxis(XBOX_GAMEPAD_MAC.LEFT_ANALOGUE_X);
 			var yaxis = Input.joystick(i).getAxis(XBOX_GAMEPAD_MAC.LEFT_ANALOGUE_Y);
 #end
@@ -423,7 +423,7 @@ class Options extends Scene
 				}
 			}
 
-#if mac
+#if (mac || linux)
 			if (Input.joystick(i).pressed(XBOX_GAMEPAD_MAC.A_BUTTON)) {
 #end
 #if windows
@@ -436,7 +436,7 @@ class Options extends Scene
 				}
 			}
 
-#if mac
+#if (mac || linux)
 			if (Input.joystick(i).pressed(XBOX_GAMEPAD_MAC.B_BUTTON)) {
 #end
 #if windows

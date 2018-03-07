@@ -1,0 +1,25 @@
+<level>
+	<spawns>
+		<spawn x="16" y="208" />
+		<spawn x="16" y="80" />
+		<spawn x="256" y="0" />
+		<spawn x="256" y="176" />
+	</spawns>
+
+	<bounds>
+		<platform x="-16" y="96" />
+		<platform x="320" y="96" />
+		<platform x="-16" y="224" />
+		<platform x="320" y="224" />
+	</bounds>
+
+	<hills>
+		<hill x="176" y="38" />
+		<hill x="96" y="134" />
+		<hill x="160" y="214" />
+	</hills>
+
+	<traps>
+		<puffer delaymin="5" delaymax="30" />
+	</traps>
+</level>
