@@ -13,7 +13,7 @@ To build the game as-is, you will need to install the following:
 
 Once Haxe is installed, you can install everything else through Haxelib. You can then build the game by opening a command line or terminal, navigating to the wizfight folder that was created when you cloned the repository, and building and running it with the command `haxelib run nme test build.nmml cpp`. While you can attempt to build the game for other targets, it is only confirmed to work with the cpp target.
 
-This copy of the source code will not compile without the assets. You can get the assets to build the game by downloading the pre-compiled release of the game from the itch.io page (https://twocredits.itch.io/wizfight). You should be able to simply copy the assets into their respective folders.
+This copy of the source code will not compile without the assets. You can get the assets to build the game by downloading the pre-compiled release of the game from the itch.io page (https://pluckyporcupine.itch.io/wizfight). You should be able to simply copy the assets into their respective folders.
 
 ## Current build status
 
@@ -33,4 +33,4 @@ The game builds on Linux without any errors, but I have yet to be able to get it
 
 While I can compile a Mac OS X build, I am unable to test it, as I no longer have a Mac OS X computer.
 
-You can find more information about me and my current projects at https://twocredits.co.
+You can find more information about me and my current projects at https://pluckyporcupinegame.boutique.
