@@ -77,21 +77,6 @@ class Logo extends Entity
 			txt.x = 0;
 			txt.y = 235;
 			scene.addGraphic(txt);
-			/*var txt = new Text("Programming, design and environment art by Matt Chelen");
-			txt.font = "font/Dretch.otf";
-			txt.x = 0;
-			txt.y = 225;
-			scene.addGraphic(txt);
-			txt = new Text("Character design, game design, and art by Katarina Klick");
-			txt.font = "font/Dretch.otf";
-			txt.x = 0;
-			txt.y = 230;
-			scene.addGraphic(txt);
-			txt = new Text("Music by Jordan Oakley");
-			txt.font = "font/Dretch.otf";
-			txt.x = 0;
-			txt.y = 235;
-			scene.addGraphic(txt);*/
 			var alphatxt = new MenuText("Beta build 1", 332, 235, false, 10, "font/Dretch.otf");
 			scene.add(alphatxt);
 
