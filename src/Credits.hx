@@ -46,7 +46,7 @@ class Credits extends Scene
 		txt = new Array();
 		txt[0] = new MenuText("By Another Day, Another Game", 180, 450, true, 18, "font/Dretch.otf");
 		txt[1] = new MenuText("- Programming, game design and environment art -", 180, 470, true, 18, "font/Dretch.otf");
-		txt[2] = new MenuText("Matt Chelen", 180, 480, true, 18, "font/Dretch.otf");
+		txt[2] = new MenuText("Ari Bellamy", 180, 480, true, 18, "font/Dretch.otf");
 		txt[3] = new MenuText("- Character design, game design, and art -", 180, 500, true, 18, "font/Dretch.otf");
 		txt[4] = new MenuText("Katarina Klick", 180, 510, true, 18, "font/Dretch.otf");
 		txt[5] = new MenuText("- Music -", 180, 530, true, 18, "font/Dretch.otf");
