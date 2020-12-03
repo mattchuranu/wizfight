@@ -33,4 +33,4 @@ The game builds on Linux without any errors, but I have yet to be able to get it
 
 While I can compile a Mac OS X build, I am unable to test it, as I no longer have a Mac OS X computer.
 
-You can find more information about me and my current projects at https://pluckyporcupinegame.boutique.
+You can find more information about me and my current projects at https://pluckyporcupine.productions. The email that it is easiest to reach me at is arabella.belladonna@gmail.com.
