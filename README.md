@@ -1,5 +1,5 @@
 # WizFight
-This is the open source release of WizFight, a side-scrolling local multiplayer shooter with wizards that have oddly specific powers. It is provided as-is. Anything in this repository (except HaxePunk, which has its own license) should be considered public domain, but the assets are not.
+This is the open source release of WizFight, a side-scrolling local multiplayer shooter with wizards that have oddly specific powers. It is provided as-is. The code is MIT licensed. The assets are not.
 
 ## Requirements
 
