@@ -1,5 +1,5 @@
 # WizFight
-This is the open source release of WizFight, a side-scrolling local multiplayer shooter with wizards that have oddly specific powers. It is provided as-is. The code is MIT licensed, but the assets are not.
+This is the open source release of WizFight, a side-scrolling local multiplayer shooter with wizards that have oddly specific powers. The code is MIT licensed, but the assets are not and should not be redistributed, regardless of any changes you make to the code.
 
 ## Requirements
 
